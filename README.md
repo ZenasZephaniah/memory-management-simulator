@@ -35,23 +35,23 @@ memory-simulator/
 ```
 
 ## **How to Build and Run**
-**Prerequisites**
+### **Prerequisites**
 * G++ Compiler (Supporting C++17)
 * Make
 
-**Build the Project**
+### **Build the Project**
 Open the terminal in the project root and run:
 ```bash
 make
 ```
 
-**Run the Simulator**
+### **Run the Simulator**
 Start the interactive shell:
 ```bash
 ./mms
 ```
 
-**Usage**
+### **Usage**
 Once inside the ```MMS_SHELL>```, you can use the following commands:
 *  **Command**         **Description**
 * ```malloc <size``` Allocates a block of ```size``` bytes.
@@ -60,12 +60,12 @@ Once inside the ```MMS_SHELL>```, you can use the following commands:
 * ```stats```        Shows memory utilization and fragmentation metrics.
 * ```exit```         Closes the simulator.
 
-**Automated Testing**
+### **Automated Testing**
 To verify the system's correctness (Cache Hit logic and Coalescing), run the following
 ```bash
 bash tests/run_tests.sh
 ```
-**Expected Output:**
+### **Expected Output:**
 ```
 [PASS] Cache Hit Logic detected.
 [PASS] Memory Coalescing detected.
