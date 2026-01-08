@@ -1,0 +1,11 @@
+CORRECTNESS CRITERIA:
+
+1. Allocation Strategy (First Fit):
+   - When 'malloc 16' is called after 'free 2', the allocator MUST fill the hole left by block 2 first, rather than appending to the end of memory.
+
+2. Coalescing:
+   - When 'free 1' and 'free 3' are called, the log must show "Merged with neighbor" messages, indicating that adjacent free blocks were combined.
+
+3. Cache Simulation:
+   - First access to an address should show "L1 MISS -> L2 MISS".
+   - Subsequent accesses to the same address (or nearby offsets) should show "L1 HIT".

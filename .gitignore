@@ -1,0 +1,6 @@
+build/
+logs/
+mms
+*.o
+.DS_Store
+test_results.log
