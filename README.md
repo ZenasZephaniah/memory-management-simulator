@@ -81,13 +81,3 @@ EOF
 ```
 
 ---
-
-### Step 4: Final Compilation and Execution Check
-
-Recompile and execute the clean, polished binary:
-
-```bash
-make clean && make && ./memsim
-```
-
-Verify that the interactive CLI runs correctly and that the `SYSTEM PAGE TABLE DUMP` is printed with clean spacing. 
