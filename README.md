@@ -73,11 +73,10 @@ You can execute a predefined sequence of memory operations (trace) using input r
 ```bash
 # Run automated scenario tests
 ./memsim < tests/workload.txt > tests/output.log
+```
 
 # Check the results
-cat tests/output.log
 ```
+cat tests/output.log
 EOF
 ```
-
----
