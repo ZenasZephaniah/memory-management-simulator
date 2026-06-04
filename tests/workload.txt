@@ -1,0 +1,11 @@
+init memory 1024
+set allocator best
+setup cache 64 256
+setup vm 256
+malloc 100
+access 1 50 r
+access 1 50 r
+access 2 50 w
+dump
+stats
+exit
